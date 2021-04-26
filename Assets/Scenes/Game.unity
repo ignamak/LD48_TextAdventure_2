@@ -1843,6 +1843,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5370311385196789253, guid: e70c57b10875749459b429c008ff2ef4, type: 3}
   m_PrefabInstance: {fileID: 1470795030}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &976290914 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8748779690141243877, guid: e70c57b10875749459b429c008ff2ef4, type: 3}
+  m_PrefabInstance: {fileID: 1470795030}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976290912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2cd78184f3bf3b409dfca3523b48aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &976290917 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5370311385196789252, guid: e70c57b10875749459b429c008ff2ef4, type: 3}
@@ -3091,6 +3102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 780dcbc3fb60c0e47ba288a6b829157b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  popUpNotification: {fileID: 0}
   contactManager: {fileID: 8520953743638175884}
   chatKim: {fileID: 8520953743638175883}
   chatJerry: {fileID: 8520953743638175882}
@@ -3128,17 +3140,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 855993834}
     m_Modifications:
     - target: {fileID: 5662657176502166497, guid: 4131b5b355586524898d0a838b2999cc, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5662657176502166497, guid: 4131b5b355586524898d0a838b2999cc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 2109644329}
-    - target: {fileID: 5662657176502166497, guid: 4131b5b355586524898d0a838b2999cc, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: ButtonState, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 5662657176510408684, guid: 4131b5b355586524898d0a838b2999cc, type: 3}
       propertyPath: m_Name
       value: NotificationsPanel
@@ -3209,7 +3213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5662657176510408685, guid: 4131b5b355586524898d0a838b2999cc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 220.04999
+      value: 294
       objectReference: {fileID: 0}
     - target: {fileID: 5662657176510408685, guid: 4131b5b355586524898d0a838b2999cc, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3227,10 +3231,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5662657177728509331, guid: 4131b5b355586524898d0a838b2999cc, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 210
-      objectReference: {fileID: 0}
+    - target: {fileID: 5662657177728509328, guid: 4131b5b355586524898d0a838b2999cc, type: 3}
+      propertyPath: systemMessagesReader
+      value: 
+      objectReference: {fileID: 976290914}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4131b5b355586524898d0a838b2999cc, type: 3}
 --- !u!1 &2089572266
