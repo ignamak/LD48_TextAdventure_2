@@ -25,6 +25,8 @@ public class PopUpNotification : MonoBehaviour
         rectTransform = GetComponent<RectTransform>();
         hidePosition = new Vector3(1492.4100341796875f, 180.0f, 0);
         showPosition = new Vector3(1098.4100341796875f, 180.0f, 0);
+
+        SendNotification(welcomeNotification);
     }
 
     // Update is called once per frame
