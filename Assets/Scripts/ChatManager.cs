@@ -11,6 +11,8 @@ public class ChatManager : MonoBehaviour
     public GameObject chatJerry;
     public GameObject chatLaura;
     public GameObject chatMark;
+
+    int musicIndex = 1;
     void Start()
     {
         
@@ -48,5 +50,14 @@ public class ChatManager : MonoBehaviour
     public void SendNotification(Notification_SO notification)
     {
         popUpNotification.SendNotification(notification);
+
+        if (musicIndex == 1)
+        {
+            AudioManager.instance.Play("firstSong");
+        }
+        if (musicIndex == 2)
+        {
+            AudioManager.instance.StartSecondSong();
+        }
     }
 }
