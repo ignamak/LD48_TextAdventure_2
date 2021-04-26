@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed9d7c58e18c6f646bc373743e2b92fc, type: 3}
+  m_Name: Laura_P_Depth06_Branch1
+  m_EditorClassIdentifier: 
+  aiName: 
+  conversationType: 2
+  messageText: Send me your puzzle
+  playerAnswers:
+  - {fileID: 11400000, guid: 4d25ab2cebda75943b92a77702351f35, type: 2}
+  - {fileID: 11400000, guid: 0e09a41974f31c8408f82c51e2c0a80f, type: 2}
+  nextAiMessage: {fileID: 0}
+  launchedNotification: {fileID: 0}
+  launchedOtherAiMessage: {fileID: 0}
+  sent: 0

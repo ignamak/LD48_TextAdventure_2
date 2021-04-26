@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed9d7c58e18c6f646bc373743e2b92fc, type: 3}
+  m_Name: Kim_P_Depth04_Branch1_2
+  m_EditorClassIdentifier: 
+  aiName: 
+  conversationType: 2
+  messageText: I am kind of a puzzle nerd if you may call me that
+  playerAnswers:
+  - {fileID: 11400000, guid: 3c12b296477bf834784ad7a11b17f708, type: 2}
+  nextAiMessage: {fileID: 0}
+  launchedNotification: {fileID: 0}
+  launchedOtherAiMessage: {fileID: 11400000, guid: a15704f129a9e5041b3e8a2e4dd86dfa, type: 2}
+  sent: 0

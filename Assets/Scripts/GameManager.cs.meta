@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 87c95efdd5466b247837ad40d8a89581
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - currentKimMessage: {fileID: 11400000, guid: 3afcf1d46e69906429366aa7ffda3a22, type: 2}
+  - currentJerryMessage: {fileID: 11400000, guid: 763ab048d39d4ad459c9086da8f84508, type: 2}
+  - currentLauraMessage: {instanceID: 0}
+  - currentMarkMessage: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

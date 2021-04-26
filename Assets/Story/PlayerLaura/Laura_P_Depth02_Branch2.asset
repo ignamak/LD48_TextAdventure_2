@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed9d7c58e18c6f646bc373743e2b92fc, type: 3}
+  m_Name: Laura_P_Depth02_Branch2
+  m_EditorClassIdentifier: 
+  aiName: 
+  conversationType: 2
+  messageText: Would you like to be texted in a particular way?
+  playerAnswers:
+  - {fileID: 11400000, guid: 4fb4a5b8bfc899d4bbd9b13398221d93, type: 2}
+  - {fileID: 11400000, guid: 3e959c1ff8322174c9e4404fe2faf6cf, type: 2}
+  nextAiMessage: {fileID: 0}
+  launchedNotification: {fileID: 0}
+  launchedOtherAiMessage: {fileID: 0}
+  sent: 0

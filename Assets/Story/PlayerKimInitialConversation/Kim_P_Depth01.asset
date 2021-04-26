@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed9d7c58e18c6f646bc373743e2b92fc, type: 3}
+  m_Name: Kim_P_Depth01
+  m_EditorClassIdentifier: 
+  aiName: 
+  conversationType: 2
+  messageText: Oh, hi, who is this?
+  playerAnswers:
+  - {fileID: 11400000, guid: da7bf90e01a88464db95258be56e4c1d, type: 2}
+  - {fileID: 11400000, guid: f5a804b2777ff5c43ba7f11d2012bccb, type: 2}
+  nextAiMessage: {fileID: 0}
+  launchedNotification: {fileID: 0}
+  launchedOtherAiMessage: {fileID: 0}
+  sent: 0
