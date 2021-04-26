@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ChatManager : MonoBehaviour
 {
+    public PopUpNotification popUpNotification;
     public ContactManager contactManager;
 
     public GameObject chatKim;
@@ -42,5 +43,10 @@ public class ChatManager : MonoBehaviour
         //contactManager.OpenContactConversation(targetChat.transform.GetChild(0).gameObject);
         contactManager.CheckNumber(number);
 
+    }
+
+    public void SendNotification(Notification_SO notification)
+    {
+        popUpNotification.SendNotification(notification);
     }
 }
