@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalFit: 2
+  m_HorizontalFit: 0
   m_VerticalFit: 2
 --- !u!1 &504556539669365440
 GameObject:
@@ -309,7 +309,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 77.64, y: -27.605}
+  m_AnchoredPosition: {x: 238.9803, y: -27.605}
   m_SizeDelta: {x: 135.28, y: 35.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &504556539669365447
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
+  m_overflowMode: 3
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
@@ -422,7 +422,7 @@ GameObject:
   - component: {fileID: 6651971336859461255}
   - component: {fileID: 224702364433881113}
   - component: {fileID: 2095593076169661956}
-  - component: {fileID: 6801246766045882947}
+  - component: {fileID: 7180287825500410447}
   m_Layer: 5
   m_Name: Message Panel
   m_TagString: Untagged
@@ -448,7 +448,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 82, y: 0}
-  m_SizeDelta: {x: 155.28, y: 55.21}
+  m_SizeDelta: {x: 477.9606, y: 55.21}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7714406223142216484
 CanvasRenderer:
@@ -507,7 +507,7 @@ MonoBehaviour:
     m_Bottom: 10
   m_ChildAlignment: 4
   m_Spacing: 0
-  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
@@ -528,26 +528,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
---- !u!114 &6801246766045882947
+--- !u!114 &7180287825500410447
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548421797455622889}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d53ceffca221c248a3965b715743cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreLayout: 0
-  m_MinWidth: 140
-  m_MinHeight: 50
-  m_PreferredWidth: -1
-  m_PreferredHeight: -1
-  m_FlexibleWidth: -1
-  m_FlexibleHeight: -1
-  m_LayoutPriority: 1
+  sizeFitter: {fileID: 2095593076169661956}
+  myText: {fileID: 3875857615666606966}
 --- !u!1 &4018523896530542693
 GameObject:
   m_ObjectHideFlags: 0
