@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 04_Jerry_P_Depth05
   m_EditorClassIdentifier: 
   aiName: 
-  conversationType: 2
+  conversationType: 3
   messageText: ...now we are...
   playerAnswers: []
   nextAiMessage: {fileID: 0}
