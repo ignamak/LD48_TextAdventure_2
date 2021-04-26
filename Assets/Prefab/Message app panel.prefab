@@ -858,7 +858,7 @@ MonoBehaviour:
   aiNameString: Mark P.
   aItalking: 0
   currentMessageSent: 0
-  currentMessage: {fileID: 0}
+  currentMessage: {fileID: 11400000, guid: 546d5daa865d709458b580401be13fc4, type: 2}
 --- !u!1 &911804918
 GameObject:
   m_ObjectHideFlags: 0
