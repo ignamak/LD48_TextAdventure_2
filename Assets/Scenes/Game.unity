@@ -262,6 +262,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 422302472}
     m_Modifications:
+    - target: {fileID: 633839532280452873, guid: 3a813a453aa0eae4db0f1478224fbbe7, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 688399064}
+    - target: {fileID: 633839532280452873, guid: 3a813a453aa0eae4db0f1478224fbbe7, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MuteMusic
+      objectReference: {fileID: 0}
     - target: {fileID: 2650736504572077509, guid: 3a813a453aa0eae4db0f1478224fbbe7, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -697,6 +705,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 422302472}
     m_Modifications:
+    - target: {fileID: 633839532280452873, guid: 3a813a453aa0eae4db0f1478224fbbe7, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 688399064}
     - target: {fileID: 2650736504572077509, guid: 3a813a453aa0eae4db0f1478224fbbe7, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1544,6 +1556,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582066772}
   m_CullTransparentMesh: 1
+--- !u!114 &688399064 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5350294953757124073, guid: f7abba6874bdeb445a0cd8d39653d447, type: 3}
+  m_PrefabInstance: {fileID: 70434880}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31bfa9b0b01551d4d817dd8b4cc8e46f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &727676806 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 563256083, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}

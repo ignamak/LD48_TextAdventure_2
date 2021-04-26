@@ -69,7 +69,7 @@ public class MessageAppManager : MonoBehaviour
             aiMes = Instantiate(aiMessagePrefab);
             aiMes.transform.SetParent(messagePlaceHolder.transform);
             aiMes.SetActive(false);
-
+            
             TextMeshProUGUI typingText = aiMes.transform.Find("Text AI typing").GetComponent<TextMeshProUGUI>();
             GameObject messagePanel = aiMes.transform.Find("Message Panel").gameObject;
             TextMeshProUGUI messageText = messagePanel.transform.Find("Text AI message").GetComponent<TextMeshProUGUI>();
@@ -136,6 +136,7 @@ public class MessageAppManager : MonoBehaviour
         aItalking = false;
         currentMessageSent = true;
         CheckIfLaunchedSomething();
+        AudioManager.instance.Play("newMessage");
 
         autoScroll.SetAutoScroll();
         //currentMessage.sent = true;

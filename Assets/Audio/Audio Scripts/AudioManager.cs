@@ -74,6 +74,11 @@ public class AudioManager : MonoBehaviour
 
     }
 
+    private void Start()
+    {
+        Play("firstSong");
+    }
+
     // Returns no value if the sound cannot be found
     public void Play(string name)
     {
@@ -118,5 +123,74 @@ public class AudioManager : MonoBehaviour
             }
 
         }
+    }
+    public void StopPlay(string name)
+    {
+        Sfx s = Array.Find(sounds, sound => sound.name == name);
+        Music m = Array.Find(music, music => music.name == name);
+
+
+        if (m == null && s == null)
+        {
+            Debug.Log("Sound" + name + "Not Found");
+            return;
+        }
+        else if (m == null && s != null)
+        {
+
+            if (s.clipsArray.Length > 0)
+            {
+                s.source.clip = (s.RandomCliptoPlay());
+                s.source.Stop();
+            }
+            else
+            {
+                if (s != null)
+                    s.source.Stop();
+            }
+        }
+        else if (m != null && s == null)
+        {
+            if (m != null)
+                m.source.Stop();
+
+
+        }
+
+    }
+    public void MuteSfx(bool enabled)
+    {
+        if (!enabled)
+        {
+            audioMixer1.SetFloat("SfxVol", -80f);
+        }
+        if (enabled)
+        {
+            audioMixer1.SetFloat("SfxVol", 0f);
+        }
+    }
+    public void MuteMusic(bool enabled)
+    {
+
+        if (!enabled)
+        {
+            audioMixer1.SetFloat("MusicVol", -80f);
+        }
+        if(enabled)
+        {
+            audioMixer1.SetFloat("MusicVol", 0f);
+        }
+    }
+    public void StartSecondSong()
+    {
+        StartCoroutine(SecondSong());
+    }
+    public IEnumerator SecondSong()
+    {
+        Play("secondSong");
+
+        yield return new WaitForSeconds(5f);
+
+        StopPlay("secondSong");
     }
 }

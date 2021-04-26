@@ -50,6 +50,7 @@ public class ContactManager : MonoBehaviour
     }
     public void OpenContactConversation(GameObject targetConversation)
     {
+        AudioManager.instance.Play("onClickSound");
         if (openConversation)
         {
             openConversation.SetActive(false);
