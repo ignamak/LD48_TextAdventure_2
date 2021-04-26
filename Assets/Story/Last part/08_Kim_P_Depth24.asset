@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 08_Kim_P_Depth24
   m_EditorClassIdentifier: 
   aiName: 
-  conversationType: 2
+  conversationType: 3
   messageText: There is no escape
   playerAnswers: []
   nextAiMessage: {fileID: 0}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 02_Kim_P_Depth23
   m_EditorClassIdentifier: 
   aiName: 
-  conversationType: 2
+  conversationType: 3
   messageText: ...it seems that...
   playerAnswers: []
   nextAiMessage: {fileID: 0}

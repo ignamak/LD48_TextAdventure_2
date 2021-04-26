@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: 07_Laura_P_Depth_18
   m_EditorClassIdentifier: 
   aiName: 
-  conversationType: 2
+  conversationType: 3
   messageText: There are no beautiful surfaces without a terrible depth
   playerAnswers: []
   nextAiMessage: {fileID: 0}
-  launchedNotification: {fileID: 0}
+  launchedNotification: {fileID: 11400000, guid: 71cb6e7575e1b184782ac7e68481b3c5, type: 2}
   launchedOtherAiMessage: {fileID: 0}
   sent: 0
