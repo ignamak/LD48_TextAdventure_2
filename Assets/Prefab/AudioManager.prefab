@@ -47,12 +47,48 @@ MonoBehaviour:
   - name: onClickSound
     clipsArray: []
     clip: {fileID: 8300000, guid: 3f14bc403c8d0ab4e95f8f50bb81df17, type: 3}
-    volume: 0
-    pitch: 0
+    volume: 1
+    pitch: 1
     loop: 0
     priority: 0
     source: {fileID: 0}
-  audioMixer1: {fileID: 0}
-  sfxaudioMixer: {fileID: 0}
-  music: []
-  musicaudioMixer: {fileID: 0}
+  - name: notificationSound
+    clipsArray: []
+    clip: {fileID: 8300000, guid: 3476007f0d7533242a028c16b74eee4c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    priority: 0
+    source: {fileID: 0}
+  - name: newMessage
+    clipsArray: []
+    clip: {fileID: 8300000, guid: 34a51b4de5a83554b9cb5b11a3dd2512, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    priority: 0
+    source: {fileID: 0}
+  audioMixer1: {fileID: 24100000, guid: b055c00699ef02d4093a3fdb7cfc9c52, type: 2}
+  sfxaudioMixer: {fileID: 137928547302484104, guid: b055c00699ef02d4093a3fdb7cfc9c52, type: 2}
+  music:
+  - name: firstSong
+    musicArray: []
+    musicClip: {fileID: 8300000, guid: 947605321ebbc1c41a80cf4dfa663177, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    PlayOnAwake: 0
+    priority: 0
+    source: {fileID: 0}
+    musicMixerGroup: {fileID: 6354215088582107769, guid: b055c00699ef02d4093a3fdb7cfc9c52, type: 2}
+  - name: secondSong
+    musicArray: []
+    musicClip: {fileID: 8300000, guid: a187b7c7563c4384398fd08f1a3eccc1, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    PlayOnAwake: 0
+    priority: 0
+    source: {fileID: 0}
+    musicMixerGroup: {fileID: 6354215088582107769, guid: b055c00699ef02d4093a3fdb7cfc9c52, type: 2}
+  musicaudioMixer: {fileID: 6354215088582107769, guid: b055c00699ef02d4093a3fdb7cfc9c52, type: 2}
