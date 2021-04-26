@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Kim_P_PuzzleToLaura
   m_EditorClassIdentifier: 
   aiName: 
-  conversationType: 2
+  conversationType: 3
   messageText: 'The result of the following puzzle will lead you to the next participant:
 
 

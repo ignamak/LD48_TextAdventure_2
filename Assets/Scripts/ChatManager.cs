@@ -26,20 +26,20 @@ public class ChatManager : MonoBehaviour
         if (message.name.Contains("Kim"))
         {
             targetChat = chatKim;
-            number = 1;
+            number = 20;
         } else if (message.name.Contains("Jerry"))
         {
             targetChat = chatJerry;
-            number = 2;
+            number = 9999999;
         } else if (message.name.Contains("Laura"))
         {
             targetChat = chatLaura;
-            number = 3;
+            number = 288;
 
         } else if (message.name.Contains("Mark"))
         {
             targetChat = chatMark;
-            number = 4;
+            number = 8;
         }
         targetChat.GetComponent<MessageAppManager>().currentMessage = message;
         //contactManager.OpenContactConversation(targetChat.transform.GetChild(0).gameObject);

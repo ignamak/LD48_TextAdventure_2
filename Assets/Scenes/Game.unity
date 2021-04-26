@@ -3082,7 +3082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 780dcbc3fb60c0e47ba288a6b829157b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popUpNotification: {fileID: 0}
+  popUpNotification: {fileID: 2050930761}
   contactManager: {fileID: 8520953743638175884}
   chatKim: {fileID: 8520953743638175883}
   chatJerry: {fileID: 8520953743638175882}
@@ -3112,6 +3112,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8520953744313709150, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
   m_PrefabInstance: {fileID: 8520953743638175879}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2050930761 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5662657177728509328, guid: 4131b5b355586524898d0a838b2999cc, type: 3}
+  m_PrefabInstance: {fileID: 2079575672}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db2d3a7780a2eea45ad25a85c82bc3d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2079575672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3193,7 +3204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5662657176510408685, guid: 4131b5b355586524898d0a838b2999cc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 294
+      value: 344
       objectReference: {fileID: 0}
     - target: {fileID: 5662657176510408685, guid: 4131b5b355586524898d0a838b2999cc, type: 3}
       propertyPath: m_AnchoredPosition.y

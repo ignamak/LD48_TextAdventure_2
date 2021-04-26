@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f2fd203067beb9244834cba0512da0fc, type: 3}
-  m_Name: Welcome_Puzzle
+  m_Name: WelcomeNot
   m_EditorClassIdentifier: 
   title: Welcome
   body: 'You have been granted access to our amazing contest in which participants
     are commited to unravel who is who in our social network and the first one to
     unveil everyone''s indetity will win 1.000.000$!!
 
-    
 
-    Everyone has been
-    given a phone number to interact with, your first goal will be trying to get
-    everybody''s number. It''s up to you what you offer in reward for another player
-    number.
 
-    
+    Everyone has been given
+    a phone number to interact with, your first goal will be trying to get everybody''s
+    number. It''s up to you what you offer in reward for another player number.
 
-    Good Luck!'
+
+
+    Good
+    Luck!'

@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed9d7c58e18c6f646bc373743e2b92fc, type: 3}
-  m_Name: Kim_P_Depth06_Branch1_2
+  m_Name: Kim_P_Depth13
   m_EditorClassIdentifier: 
   aiName: 
-  conversationType: 1
-  messageText: well then player, see if u can crack this
-  playerAnswers: []
-  nextAiMessage: {fileID: 11400000, guid: 3745ad9b53ec5ed4c8935154c6254bc6, type: 2}
-  launchedNotification: {fileID: 0}
-  launchedOtherAiMessage: {fileID: 11400000, guid: 3745ad9b53ec5ed4c8935154c6254bc6, type: 2}
-  sent: 0
+  conversationType: 3
+  messageText: 
+  playerAnswers:
+  - {fileID: 11400000, guid: f484c01de9fb74b488b332fdc2730835, type: 2}
+  nextAiMessage: {fileID: 0}
+  launchedNotification: {fileID: 11400000, guid: 440a3c0475c02a84d8c1cf4c8c3a8c50, type: 2}
+  launchedOtherAiMessage: {fileID: 11400000, guid: d48cdf54ba044a94281d63dcb2b77de4, type: 2}
+  sent: 1

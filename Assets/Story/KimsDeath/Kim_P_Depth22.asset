@@ -20,5 +20,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5977acae99eb2774cb3e18b4d88a29b8, type: 2}
   nextAiMessage: {fileID: 0}
   launchedNotification: {fileID: 0}
-  launchedOtherAiMessage: {fileID: 0}
+  launchedOtherAiMessage: {fileID: 11400000, guid: 5d063fc871f301742991551f61790334, type: 2}
   sent: 0
