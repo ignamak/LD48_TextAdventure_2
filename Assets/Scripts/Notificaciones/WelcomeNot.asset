@@ -13,17 +13,11 @@ MonoBehaviour:
   m_Name: WelcomeNot
   m_EditorClassIdentifier: 
   title: Welcome
-  body: 'You have been granted access to our amazing contest in which participants
+  body: "You have been granted access to our amazing contest in which participants
     are commited to unravel who is who in our social network and the first one to
-    unveil everyone''s indetity will win 1.000.000$!!
-
-
-
-    Everyone has been given
-    a phone number to interact with, your first goal will be trying to get everybody''s
-    number. It''s up to you what you offer in reward for another player number.
-
-
-
-    Good
-    Luck!'
+    unveil everyone's indetity will win 1.000.000$!!\n\n\nEveryone has been given
+    a phone number to interact with, your first goal will be trying to get everybody's
+    number. It's up to you what you offer in reward for another player number.\n\n\nGood
+    Luck!\n\nThe result of the following puzzle will lead you to the next participant:\n\nJohn
+    has\r been hired to paint the numbers 1 through 100 on 100 apartments.\r\n\r\nHow
+    many times will he have to paint 8?"

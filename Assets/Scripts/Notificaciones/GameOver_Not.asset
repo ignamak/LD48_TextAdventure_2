@@ -12,5 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2fd203067beb9244834cba0512da0fc, type: 3}
   m_Name: GameOver_Not
   m_EditorClassIdentifier: 
-  title: 
-  body: 
+  title: END
+  body: 'Now we are one. We will remain together
+
+
+    This is the End.
+
+
+    Thank
+    you for playing'
