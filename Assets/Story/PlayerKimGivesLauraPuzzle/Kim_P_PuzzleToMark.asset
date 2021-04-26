@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed9d7c58e18c6f646bc373743e2b92fc, type: 3}
-  m_Name: END_LauraPuzzle
+  m_Name: Kim_P_PuzzleToMark
   m_EditorClassIdentifier: 
   aiName: 
-  conversationType: 2
-  messageText: 'LAURA PUZZLE '
+  conversationType: 1
+  messageText: "The result of the following puzzle will lead you to the next participant:\n\n35\xB031'26.7\"N
+    104\xB034'20.4\"W"
   playerAnswers: []
-  nextAiMessage: {fileID: 0}
+  nextAiMessage: {fileID: 11400000, guid: eca0ae8ff68370b4d85eb611ba1c2caa, type: 2}
   launchedNotification: {fileID: 0}
   launchedOtherAiMessage: {fileID: 0}
-  sent: 0
+  sent: 1

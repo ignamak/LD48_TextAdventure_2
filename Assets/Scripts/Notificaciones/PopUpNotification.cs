@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class PopUpNotification : MonoBehaviour
 {
+
+    public Notification_SO welcomeNotification;
+
     public SystemMessagesReader systemMessagesReader;
     public Text notificationTitle;
-    public Text notificationBody;
 
     RectTransform rectTransform;
 
@@ -20,8 +22,10 @@ public class PopUpNotification : MonoBehaviour
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
-        hidePosition = new Vector3(1492.4100341796875f, 180.0f, 0);
+        hidePosition = new Vector3(1568.360107421875f, 180.0f, 0);
         showPosition = new Vector3(1098.4100341796875f, 180.0f, 0);
+
+        SendNotification(welcomeNotification);
     }
 
     // Update is called once per frame
@@ -68,7 +72,6 @@ public class PopUpNotification : MonoBehaviour
     {
         movingNotification = true;
         notificationTitle.text = notification.getTitle();
-        notificationBody.text = notification.getBody();
         systemMessagesReader.CreateNewMessage(notification);
     }
 }
