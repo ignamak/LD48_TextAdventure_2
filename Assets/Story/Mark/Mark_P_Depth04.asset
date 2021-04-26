@@ -17,6 +17,6 @@ MonoBehaviour:
   messageText: NO! You are one of them JUST LEAVE ME ALONE
   playerAnswers: []
   nextAiMessage: {fileID: 0}
-  launchedNotification: {fileID: 0}
+  launchedNotification: {fileID: 11400000, guid: 5117ad195928b3f4db7ae90c6e5fcb96, type: 2}
   launchedOtherAiMessage: {fileID: 0}
   sent: 0
