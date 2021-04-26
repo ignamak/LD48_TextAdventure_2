@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: P_Jerry_Depth05
   m_EditorClassIdentifier: 
   answer: Your turn
-  aiMessage: {fileID: 0}
+  aiMessage: {fileID: 11400000, guid: af0c8f862eb28f247870ca3bb2f09fe9, type: 2}
