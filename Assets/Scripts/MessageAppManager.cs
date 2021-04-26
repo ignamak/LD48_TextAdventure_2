@@ -9,7 +9,7 @@ public class MessageAppManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI aiName;
     //[SerializeField] TextMeshProUGUI aiMessage;
     //[SerializeField] TextMeshProUGUI playerAnswer;
-
+    public AutoScroll autoScroll;
     public Dropdown dropdown;
 
     public GameObject aiMessagePrefab;
@@ -110,6 +110,7 @@ public class MessageAppManager : MonoBehaviour
             playerMes.transform.SetParent(messagePlaceHolder.transform);
             currentMessage = currentMessage.playerAnswers[optionChosenValue].aiMessage;
             currentMessageSent = false;
+            autoScroll.SetAutoScroll();
             CheckConversationType();
         }
     }
@@ -134,6 +135,8 @@ public class MessageAppManager : MonoBehaviour
         aItalking = false;
         currentMessageSent = true;
         CheckIfLaunchedSomething();
+
+        autoScroll.SetAutoScroll();
         //currentMessage.sent = true;
 
         if (currentMessage.conversationType == AImessage.Type.AI_STARTS_WAITING_PLAYER)
@@ -153,6 +156,11 @@ public class MessageAppManager : MonoBehaviour
         if (currentMessage.launchedOtherAiMessage)
         {
             chatManager.CheckWhatChat(currentMessage.launchedOtherAiMessage);
+        }
+        if (currentMessage.launchedNotification)
+        {
+            chatManager.SendNotification(currentMessage.launchedNotification);
+
         }
     }
 
