@@ -73,5 +73,6 @@ public class PopUpNotification : MonoBehaviour
         movingNotification = true;
         notificationTitle.text = notification.getTitle();
         systemMessagesReader.CreateNewMessage(notification);
+        AudioManager.instance.Play("notificationSound");
     }
 }

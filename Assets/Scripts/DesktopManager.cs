@@ -18,6 +18,7 @@ public class DesktopManager : MonoBehaviour
     }
     public void OpenPanel(ButtonState b)
     {
+        AudioManager.instance.Play("onClickSound");
         CloseCurrentPanel();
         if (b)
         {
@@ -29,11 +30,11 @@ public class DesktopManager : MonoBehaviour
     }
     public void CloseCurrentPanel()
     {
-
         if (currentButton)
         {
             currentButton.associatedPanel.SetActive(false);
             currentButton.ActiveButton();
+            AudioManager.instance.Play("onClickSound");
 
             //AudioManager.instance.Play("openPanelSound");
 
