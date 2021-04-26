@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Notification_SO : ScriptableObject
 {
     [SerializeField] string title;
-    [SerializeField] string body;
+    [TextArea(10, 14)] [SerializeField] string body;
 
     public string getTitle() { return title; }
     public string getBody() { return body; }

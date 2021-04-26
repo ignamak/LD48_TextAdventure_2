@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 13_Laura_P_Depth21
   m_EditorClassIdentifier: 
   aiName: 
-  conversationType: 2
+  conversationType: 1
   messageText: Soon We Will be ONE
   playerAnswers: []
   nextAiMessage: {fileID: 0}

@@ -980,22 +980,22 @@ MonoBehaviour:
   bgConversation: {fileID: 21300000, guid: 155b842c409c7014c883005fdf9ce279, type: 3}
   ai1Contact: {fileID: 1880201992}
   ai1Conversation: {fileID: 4172973505836611905}
-  ai1Number: 1
+  ai1Number: 20
   ai2Contact: {fileID: 3936380920042509431}
   ai2Conversation: {fileID: 2031744076}
-  ai2Number: 2
+  ai2Number: 9999999
   ai3Contact: {fileID: 3741097666255484217}
   ai3Conversation: {fileID: 9594793}
-  ai3Number: 3
+  ai3Number: 288
   ai4Contact: {fileID: 8697345636862197921}
   ai4Conversation: {fileID: 833271149}
-  ai4Number: 4
+  ai4Number: 8
   allContacts:
   - {fileID: 1880201992}
   - {fileID: 3936380920042509431}
   - {fileID: 3741097666255484217}
   - {fileID: 8697345636862197921}
-  loadAllContacts: 0
+  loadAllContacts: 123456789
 --- !u!1 &1086530152
 GameObject:
   m_ObjectHideFlags: 0

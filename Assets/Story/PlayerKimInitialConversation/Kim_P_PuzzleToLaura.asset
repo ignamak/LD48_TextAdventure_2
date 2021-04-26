@@ -10,13 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed9d7c58e18c6f646bc373743e2b92fc, type: 3}
-  m_Name: Puzzle 3 Notification
+  m_Name: Kim_P_PuzzleToLaura
   m_EditorClassIdentifier: 
   aiName: 
-  conversationType: 1
-  messageText: PUZZLE_3 para el numero de Mark
+  conversationType: 2
+  messageText: 'The result of the following puzzle will lead you to the next participant:
+
+
+    ..---  
+    ---..   ---..'
   playerAnswers: []
-  nextAiMessage: {fileID: 11400000, guid: eca0ae8ff68370b4d85eb611ba1c2caa, type: 2}
+  nextAiMessage: {fileID: 0}
   launchedNotification: {fileID: 0}
   launchedOtherAiMessage: {fileID: 0}
-  sent: 1
+  sent: 0
