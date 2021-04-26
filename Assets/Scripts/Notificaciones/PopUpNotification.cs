@@ -19,7 +19,7 @@ public class PopUpNotification : MonoBehaviour
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
-        hidePosition = new Vector3(1492.4100341796875f, 180.0f, 0);
+        hidePosition = new Vector3(1568.360107421875f, 180.0f, 0);
         showPosition = new Vector3(1098.4100341796875f, 180.0f, 0);
     }
 

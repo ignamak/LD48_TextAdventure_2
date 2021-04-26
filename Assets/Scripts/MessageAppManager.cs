@@ -99,6 +99,7 @@ public class MessageAppManager : MonoBehaviour
                 options.Add(option.answer);
             }
             dropdown.AddOptions(options);
+            GetDropdownValue(dropdown);
         }
     }
     public void newPlayerMessage()

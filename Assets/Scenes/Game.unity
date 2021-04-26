@@ -2467,22 +2467,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 855993834}
     m_Modifications:
-    - target: {fileID: 5370311383379780791, guid: e70c57b10875749459b429c008ff2ef4, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 57
-      objectReference: {fileID: 0}
-    - target: {fileID: 5370311383379780791, guid: e70c57b10875749459b429c008ff2ef4, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -25
-      objectReference: {fileID: 0}
-    - target: {fileID: 5370311384457467300, guid: e70c57b10875749459b429c008ff2ef4, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -547.1571
-      objectReference: {fileID: 0}
-    - target: {fileID: 5370311384457467303, guid: e70c57b10875749459b429c008ff2ef4, type: 3}
-      propertyPath: m_Spacing
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 5370311385196789252, guid: e70c57b10875749459b429c008ff2ef4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2570,10 +2554,6 @@ PrefabInstance:
     - target: {fileID: 5370311385196789253, guid: e70c57b10875749459b429c008ff2ef4, type: 3}
       propertyPath: m_Name
       value: SystemMessagesPanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 5370311385196789253, guid: e70c57b10875749459b429c008ff2ef4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e70c57b10875749459b429c008ff2ef4, type: 3}
