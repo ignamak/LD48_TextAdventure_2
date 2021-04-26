@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: P_Kim_Depth12
   m_EditorClassIdentifier: 
   answer: TY!!
-  aiMessage: {fileID: 11400000, guid: 3a1f52e6341488e40b5d9b57928dd105, type: 2}
+  aiMessage: {fileID: 11400000, guid: e2360cbf5ab100449bea6aa5f47c50e9, type: 2}
