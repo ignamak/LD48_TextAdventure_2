@@ -27,12 +27,13 @@ public class SystemMessagesReader : MonoBehaviour
         //-----------------------------------------------------------------------------
     }
 
-    public void CreateNewMessage(Notification_SO messageSO) 
+    public GameObject CreateNewMessage(Notification_SO messageSO) 
     {
-        CreateNewMessage(messageSO.getTitle(), messageSO.getBody());
+        GameObject aux = CreateNewMessage(messageSO.getTitle(), messageSO.getBody());
+        return aux;
     }
 
-    private void CreateNewMessage(string title, string msg) 
+    private GameObject CreateNewMessage(string title, string msg) 
     {
 
         GameObject newMsg = Instantiate(MessagePrefab, new Vector3(0, 0, 0), Quaternion.identity);
@@ -52,6 +53,19 @@ public class SystemMessagesReader : MonoBehaviour
                 t.text = msg;
             }
         }
+
+        return newMsg;
+
     }
 
+    public void HacerLaNapa() 
+    {
+        Invoke( "SuperDuperNapa", 0.5f);
+    }
+
+    public void SuperDuperNapa() 
+    {
+        GameObject go = CreateNewMessage(messagesLoader.messages_SO[Random.Range(0, messagesLoader.messages_SO.Count)]);
+        Destroy(go);
+    }
 }
