@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class PopUpNotification : MonoBehaviour
 {
+    public Notification_SO welcomeNotification;
+
+
 
     RectTransform rectTransform;
 
