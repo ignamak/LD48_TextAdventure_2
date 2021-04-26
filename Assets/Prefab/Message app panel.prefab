@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiName: {fileID: 5296005108551806642}
-  autoScroll: {fileID: 0}
+  autoScroll: {fileID: 303764734}
   dropdown: {fileID: 8520953744156106761}
   aiMessagePrefab: {fileID: 504556539212143572, guid: a7494bc9ae5a3694ba4488f03f462b27, type: 3}
   playerAnswerPrefab: {fileID: 8839632680193075104, guid: f8a18216686f7264c9afeb5645ca800d, type: 3}
@@ -56,7 +56,7 @@ MonoBehaviour:
   aiNameString: Laura D.
   aItalking: 0
   currentMessageSent: 0
-  currentMessage: {fileID: 0}
+  currentMessage: {fileID: 11400000, guid: 952511e84a4ef6342a0bef2f72897fea, type: 2}
 --- !u!1 &179062435
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,6 +616,7 @@ GameObject:
   - component: {fileID: 563256087}
   - component: {fileID: 563256086}
   - component: {fileID: 563256085}
+  - component: {fileID: 727676811}
   m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
@@ -712,6 +713,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &727676811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563256083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503bbc12604701a48ae83912cef3fe03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &669838392
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,7 +847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiName: {fileID: 7930684639957687204}
-  autoScroll: {fileID: 0}
+  autoScroll: {fileID: 727676811}
   dropdown: {fileID: 8520953744156106761}
   aiMessagePrefab: {fileID: 504556539212143572, guid: a7494bc9ae5a3694ba4488f03f462b27, type: 3}
   playerAnswerPrefab: {fileID: 8839632680193075104, guid: f8a18216686f7264c9afeb5645ca800d, type: 3}
@@ -1266,6 +1279,7 @@ GameObject:
   - component: {fileID: 1361397019}
   - component: {fileID: 1361397018}
   - component: {fileID: 1361397017}
+  - component: {fileID: 1557288420}
   m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
@@ -1362,6 +1376,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1557288420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361397015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503bbc12604701a48ae83912cef3fe03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1494274772
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,6 +2126,7 @@ GameObject:
   - component: {fileID: 1952533372}
   - component: {fileID: 1952533371}
   - component: {fileID: 1952533370}
+  - component: {fileID: 303764734}
   m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
@@ -2194,6 +2221,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &303764734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952533368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503bbc12604701a48ae83912cef3fe03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2031744076
 GameObject:
   m_ObjectHideFlags: 0
@@ -2239,7 +2278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiName: {fileID: 2621308797386061607}
-  autoScroll: {fileID: 0}
+  autoScroll: {fileID: 1557288420}
   dropdown: {fileID: 8520953744156106761}
   aiMessagePrefab: {fileID: 504556539212143572, guid: a7494bc9ae5a3694ba4488f03f462b27, type: 3}
   playerAnswerPrefab: {fileID: 8839632680193075104, guid: f8a18216686f7264c9afeb5645ca800d, type: 3}
@@ -3371,7 +3410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiName: {fileID: 8520953743548307314}
-  autoScroll: {fileID: 0}
+  autoScroll: {fileID: 1653843157}
   dropdown: {fileID: 8520953744156106761}
   aiMessagePrefab: {fileID: 504556539212143572, guid: a7494bc9ae5a3694ba4488f03f462b27, type: 3}
   playerAnswerPrefab: {fileID: 8839632680193075104, guid: f8a18216686f7264c9afeb5645ca800d, type: 3}
@@ -3382,7 +3421,7 @@ MonoBehaviour:
   aiNameString: Kymberly S.
   aItalking: 0
   currentMessageSent: 0
-  currentMessage: {fileID: 11400000, guid: d48cdf54ba044a94281d63dcb2b77de4, type: 2}
+  currentMessage: {fileID: 11400000, guid: c3aebde589171ca4fb0606371ecaf72a, type: 2}
 --- !u!1 &4302401411004253999
 GameObject:
   m_ObjectHideFlags: 0
@@ -5405,6 +5444,7 @@ GameObject:
   - component: {fileID: 8520953744104548258}
   - component: {fileID: 8520953744104548259}
   - component: {fileID: 8520953744104548260}
+  - component: {fileID: 1653843157}
   m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
@@ -5501,6 +5541,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1653843157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8520953744104548262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503bbc12604701a48ae83912cef3fe03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8520953744145182596
 GameObject:
   m_ObjectHideFlags: 0
@@ -6939,14 +6991,14 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: d61a113687bbf584082235c75bde82d6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a80ced5c0dc74b34982885a07df120a8, type: 3}
---- !u!1 &3936380920042509431 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3668686274326517195, guid: a80ced5c0dc74b34982885a07df120a8, type: 3}
-  m_PrefabInstance: {fileID: 308812331248714172}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &3936380920042509430 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3668686274326517194, guid: a80ced5c0dc74b34982885a07df120a8, type: 3}
+  m_PrefabInstance: {fileID: 308812331248714172}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3936380920042509431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3668686274326517195, guid: a80ced5c0dc74b34982885a07df120a8, type: 3}
   m_PrefabInstance: {fileID: 308812331248714172}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3668686275667611331
@@ -7094,14 +7146,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a80ced5c0dc74b34982885a07df120a8, type: 3}
---- !u!1 &1880201992 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3668686274326517195, guid: a80ced5c0dc74b34982885a07df120a8, type: 3}
-  m_PrefabInstance: {fileID: 3668686275667611331}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1880201993 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3668686274326517194, guid: a80ced5c0dc74b34982885a07df120a8, type: 3}
+  m_PrefabInstance: {fileID: 3668686275667611331}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1880201992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3668686274326517195, guid: a80ced5c0dc74b34982885a07df120a8, type: 3}
   m_PrefabInstance: {fileID: 3668686275667611331}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5357849227150120298

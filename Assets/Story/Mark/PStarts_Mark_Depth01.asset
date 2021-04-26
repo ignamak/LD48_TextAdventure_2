@@ -16,7 +16,7 @@ MonoBehaviour:
   conversationType: 0
   messageText: 
   playerAnswers:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 9eaf0cc4ca50c4e4e864d617341810c1, type: 2}
   - {fileID: 0}
   nextAiMessage: {fileID: 0}
   launchedNotification: {fileID: 0}
