@@ -5,9 +5,12 @@ using UnityEngine.UI;
 
 public class PopUpNotification : MonoBehaviour
 {
+
     public Notification_SO welcomeNotification;
 
-
+    public SystemMessagesReader systemMessagesReader;
+    public Text notificationTitle;
+    public Text notificationBody;
 
     RectTransform rectTransform;
 
@@ -62,5 +65,13 @@ public class PopUpNotification : MonoBehaviour
         DesktopManager desktopManager = GameObject.FindObjectOfType<DesktopManager>();
         desktopManager.OpenPanel(button);
         //desktopManager.OpenPanel(SystemMessages);
+    }
+
+    public void SendNotification(Notification_SO notification)
+    {
+        movingNotification = true;
+        notificationTitle.text = notification.getTitle();
+        notificationBody.text = notification.getBody();
+        systemMessagesReader.CreateNewMessage(notification);
     }
 }

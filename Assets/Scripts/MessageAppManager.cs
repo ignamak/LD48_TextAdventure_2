@@ -157,6 +157,11 @@ public class MessageAppManager : MonoBehaviour
         {
             chatManager.CheckWhatChat(currentMessage.launchedOtherAiMessage);
         }
+        if (currentMessage.launchedNotification)
+        {
+            chatManager.SendNotification(currentMessage.launchedNotification);
+
+        }
     }
 
     IEnumerator AITypingAnimation(TextMeshProUGUI typingText)
