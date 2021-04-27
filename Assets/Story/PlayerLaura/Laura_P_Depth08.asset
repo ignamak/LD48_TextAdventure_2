@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Laura_P_Depth08
   m_EditorClassIdentifier: 
   aiName: 
-  conversationType: 2
+  conversationType: 3
   messageText: Send me your puzzle
   playerAnswers: []
   nextAiMessage: {fileID: 0}
   launchedNotification: {fileID: 0}
-  launchedOtherAiMessage: {fileID: 0}
+  launchedOtherAiMessage: {fileID: 11400000, guid: 3ff3e528dde1e7c47b8a719804608527, type: 2}
   sent: 0
