@@ -23,7 +23,7 @@ public class AutoScroll : MonoBehaviour
     {
         float t0 = 0.0f;
 
-        while (t0 < 1f)
+        while (t0 < 0.2f)
         {
             t0 += Time.deltaTime / duration;
             scrollRect.verticalNormalizedPosition = Mathf.Lerp(startPosition, endPosition, t0);
@@ -33,7 +33,12 @@ public class AutoScroll : MonoBehaviour
     }
     public void SetAutoScroll()
     {
-
-        StartCoroutine(AutoScrollView(currentScrollRect, scrollbar1.value, 0, 2f));
+        if (currentScrollRect.gameObject.activeInHierarchy)
+        {
+            if (scrollbar1.gameObject.activeInHierarchy)
+            {
+                StartCoroutine(AutoScrollView(currentScrollRect, scrollbar1.value, 0, 1f));
+            }
+        }
     }
 }
