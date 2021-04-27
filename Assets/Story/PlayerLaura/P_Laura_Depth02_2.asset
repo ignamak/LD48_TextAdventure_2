@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: P_Laura_Depth02_2
   m_EditorClassIdentifier: 
   answer: How thoughtful, do you always text like that?
-  aiMessage: {fileID: 11400000, guid: 1c70c5dc313e4de4e96e1be18c2943c1, type: 2}
+  aiMessage: {fileID: 11400000, guid: 55637b2f09a3499469fe6dc4bf6b6e6f, type: 2}
