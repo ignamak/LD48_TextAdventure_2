@@ -41,8 +41,10 @@ public class ChatManager : MonoBehaviour
             targetChat = chatMark;
             number = 8;
         }
-        targetChat.GetComponent<MessageAppManager>().currentMessage = message;
-        targetChat.GetComponent<MessageAppManager>().currentMessageSent = false;
+        MessageAppManager messageAppmanager = targetChat.GetComponent<MessageAppManager>();
+        messageAppmanager.currentMessage = message;
+        messageAppmanager.currentMessageSent = false;
+        messageAppmanager.SetupAndLaunchConversation();
         //contactManager.OpenContactConversation(targetChat.transform.GetChild(0).gameObject);
         contactManager.CheckNumber(number);
 

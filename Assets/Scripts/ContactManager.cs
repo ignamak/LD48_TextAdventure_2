@@ -67,7 +67,7 @@ public class ContactManager : MonoBehaviour
         if (messageAppManager.currentMessageSent)
             messageAppManager.SetUpPlayerOptions();
         else
-            messageAppManager.CheckConversationType();
+            messageAppManager.SetupAndLaunchConversation();
 
 
 
@@ -84,6 +84,7 @@ public class ContactManager : MonoBehaviour
                 bg.sprite = bgSelectedConversation;
                 
         }
+        selectedChat.transform.Find("Profile photo").transform.Find("Red dot").gameObject.SetActive(false);
     }
     public void GetMessage()
     {
