@@ -2630,6 +2630,36 @@ MonoBehaviour:
   notificationSprite: {fileID: 0}
   buttonImage: {fileID: 1154760489}
   associatedPanel: {fileID: 0}
+--- !u!1 &1194023659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1194023660}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1194023660
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194023659}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 713.8471, y: 348.6389, z: -7.5789394}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1258931258 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7092622298505902951, guid: 131b854d1632451489a3f4ec917dfe36, type: 3}
@@ -3929,86 +3959,18 @@ PrefabInstance:
       propertyPath: chatManager
       value: 
       objectReference: {fileID: 1840727797}
-    - target: {fileID: 380814562, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 456646407, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 833271151, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
       propertyPath: chatManager
       value: 
       objectReference: {fileID: 1840727797}
-    - target: {fileID: 911804918, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1494274775, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1539973980, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
       propertyPath: chatManager
       value: 
       objectReference: {fileID: 1840727797}
-    - target: {fileID: 1539973980, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
-      propertyPath: aiNameString
-      value: Kimberly S.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1569574767, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1591056282, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2031744078, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
       propertyPath: chatManager
       value: 
       objectReference: {fileID: 1840727797}
-    - target: {fileID: 96335531943883049, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1375998317216030225, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1375998317216030225, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1375998317216030225, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: -17
-      objectReference: {fileID: 0}
-    - target: {fileID: 1912680861586083996, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1912680861586083996, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4302401411004253999, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5138315417401214903, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8520953743102374724, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8520953743102374724, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8520953744313709150, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4096,10 +4058,6 @@ PrefabInstance:
     - target: {fileID: 8520953744313709151, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
       propertyPath: m_Name
       value: Message app panel
-      objectReference: {fileID: 0}
-    - target: {fileID: 8520953744313709151, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09e58b62c8b98cb478b2e14fc6c5ac55, type: 3}

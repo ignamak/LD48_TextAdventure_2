@@ -84,6 +84,7 @@ public class ContactManager : MonoBehaviour
                 bg.sprite = bgSelectedConversation;
                 
         }
+        selectedChat.transform.Find("Profile photo").transform.Find("Red dot").gameObject.SetActive(false);
     }
     public void GetMessage()
     {

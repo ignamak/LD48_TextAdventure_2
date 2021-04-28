@@ -24,6 +24,7 @@ public class MessageAppManager : MonoBehaviour
     public string aiNameString = "ACORDARSE DE ESCRIBIR";
     public bool aItalking;
     public bool currentMessageSent = false;
+    public GameObject redDot;
 
     int optionChosenValue = 0;
 
@@ -84,6 +85,8 @@ public class MessageAppManager : MonoBehaviour
         aItalking = true;
         if (conversationPanel.activeInHierarchy)
             dropdown.ClearOptions();
+        else
+            redDot.SetActive(true);
         aiMes = Instantiate(aiMessagePrefab);
         aiMes.transform.SetParent(messagePlaceHolder.transform);
         aiMes.SetActive(false);
