@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | LD48_TextAdventure</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1280px; height: 720px; background: #231F20"></canvas>
+    <script src="Build/WEB.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/WEB.data.br",
+        frameworkUrl: "Build/WEB.framework.js.br",
+        codeUrl: "Build/WEB.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Ldj48Company",
+        productName: "LD48_TextAdventure",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
