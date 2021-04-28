@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed9d7c58e18c6f646bc373743e2b92fc, type: 3}
-  m_Name: Kim_P_Depth07
+  m_Name: Mark_P_PauseConversation
   m_EditorClassIdentifier: 
   aiName: 
-  conversationType: 1
-  messageText: Hey!
+  conversationType: 3
+  messageText: 'Cant talk now, leave me alone
+
+'
   playerAnswers: []
-  nextAiMessage: {fileID: 11400000, guid: 45798e2682e758d49a1bc46e2ab22001, type: 2}
+  nextAiMessage: {fileID: 0}
   launchedNotification: {fileID: 0}
-  launchedOtherAiMessage: {fileID: 0}
-  sent: 1
+  launchedOtherAiMessage: {fileID: 11400000, guid: d48cdf54ba044a94281d63dcb2b77de4, type: 2}
+  sent: 0

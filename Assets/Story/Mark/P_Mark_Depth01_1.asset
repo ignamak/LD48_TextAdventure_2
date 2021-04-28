@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d96f536b0eadc1439f714a25372af1e, type: 3}
   m_Name: P_Mark_Depth01_1
   m_EditorClassIdentifier: 
-  answer: Hey! You are Mark, isn't it?
-  aiMessage: {fileID: 0}
+  answer: Hey
+  aiMessage: {fileID: 11400000, guid: 7bcdfd1570206c14da33e7779119601d, type: 2}

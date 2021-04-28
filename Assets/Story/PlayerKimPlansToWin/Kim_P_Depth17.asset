@@ -15,7 +15,7 @@ MonoBehaviour:
   aiName: 
   conversationType: 2
   messageText: How about that you tell any of them that if they leave now you would
-    share the price later
+    share the prize later
   playerAnswers:
   - {fileID: 11400000, guid: c669b72a8a2dc0b42a8a2ce67134d288, type: 2}
   nextAiMessage: {fileID: 0}

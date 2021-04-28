@@ -10,15 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed9d7c58e18c6f646bc373743e2b92fc, type: 3}
-  m_Name: 12_Laura_P_Depth20
+  m_Name: Kim_P_Depth07
   m_EditorClassIdentifier: 
   aiName: 
   conversationType: 1
-  messageText: Now I control almost the whole system. As soon as I asimilate you
-    this so called "game" will be over and I will take on them making them kill each
-    other again. Let's find out together how cheap is a human life.
+  messageText: Hey!
   playerAnswers: []
-  nextAiMessage: {fileID: 11400000, guid: 7dd4492bd1d2c3243bcf2d8a6781d4d1, type: 2}
+  nextAiMessage: {fileID: 11400000, guid: 45798e2682e758d49a1bc46e2ab22001, type: 2}
   launchedNotification: {fileID: 0}
   launchedOtherAiMessage: {fileID: 0}
   sent: 0

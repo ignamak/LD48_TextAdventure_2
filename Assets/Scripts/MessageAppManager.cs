@@ -89,7 +89,7 @@ public class MessageAppManager : MonoBehaviour
         aItalking = false;
         if (conversationPanel.activeInHierarchy)
         {
-            print("indicando opciones al jugador");
+            //print("indicando opciones al jugador");
             List<string> options = new List<string>();
 
             dropdown.ClearOptions();
@@ -127,6 +127,7 @@ public class MessageAppManager : MonoBehaviour
     IEnumerator AITyping(TextMeshProUGUI typingText, GameObject messagePanel, TextMeshProUGUI messageText)
     {
         aiMes.SetActive(true);
+        autoScroll.SetAutoScroll();
         StartCoroutine(AITypingAnimation(typingText));
         yield return new WaitForSeconds(currentMessage.messageText.Length * 0.05f);
         StopCoroutine(AITypingAnimation(typingText));
@@ -138,7 +139,6 @@ public class MessageAppManager : MonoBehaviour
         CheckIfLaunchedSomething();
         AudioManager.instance.Play("newMessage");
 
-        autoScroll.SetAutoScroll();
         //currentMessage.sent = true;
 
         if (currentMessage.conversationType == AImessage.Type.AI_STARTS_WAITING_PLAYER)

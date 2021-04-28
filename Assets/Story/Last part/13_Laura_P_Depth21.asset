@@ -17,6 +17,6 @@ MonoBehaviour:
   messageText: Soon We Will be ONE
   playerAnswers: []
   nextAiMessage: {fileID: 0}
-  launchedNotification: {fileID: 0}
+  launchedNotification: {fileID: 11400000, guid: 1b37308537b34c5449a5cd2b34fc75a9, type: 2}
   launchedOtherAiMessage: {fileID: 0}
   sent: 0

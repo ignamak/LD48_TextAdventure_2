@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: Laura_P_Depth14
   m_EditorClassIdentifier: 
   aiName: 
-  conversationType: 2
+  conversationType: 3
   messageText: Fuck you too
-  playerAnswers:
-  - {fileID: 11400000, guid: f9a5c88bfaffd8c49a20fddb6ccde435, type: 2}
+  playerAnswers: []
   nextAiMessage: {fileID: 0}
   launchedNotification: {fileID: 0}
-  launchedOtherAiMessage: {fileID: 0}
+  launchedOtherAiMessage: {fileID: 11400000, guid: 4aa2300bb18b59845a804f814f5b52d1, type: 2}
   sent: 0

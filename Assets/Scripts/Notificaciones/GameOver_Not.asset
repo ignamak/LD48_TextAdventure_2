@@ -13,11 +13,8 @@ MonoBehaviour:
   m_Name: GameOver_Not
   m_EditorClassIdentifier: 
   title: END
-  body: 'Now we are one. We will remain together
+  body: 'Now we are one. We will remain together. System restarting...
 
 
-    This is the End.
-
-
-    Thank
-    you for playing'
+    --GAME
+    OVER--'

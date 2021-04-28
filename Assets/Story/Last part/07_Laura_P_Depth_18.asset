@@ -18,5 +18,5 @@ MonoBehaviour:
   playerAnswers: []
   nextAiMessage: {fileID: 0}
   launchedNotification: {fileID: 11400000, guid: 71cb6e7575e1b184782ac7e68481b3c5, type: 2}
-  launchedOtherAiMessage: {fileID: 0}
+  launchedOtherAiMessage: {fileID: 11400000, guid: 838fcc6aa5a584a49a6f81c50edd462a, type: 2}
   sent: 0
