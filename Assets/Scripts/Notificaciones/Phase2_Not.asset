@@ -13,9 +13,6 @@ MonoBehaviour:
   m_Name: Phase2_Not
   m_EditorClassIdentifier: 
   title: 2nd Phase!
-  body: 'Congratulations! You made it to the 2nd phase!
-
-
-    In this phase your
-    goal is to be the only one left, Convince the other participants to leave the
-    game. You may act as you consider.'
+  body: "Congratulations! You made it to the 2nd phase!\n\nIn this phase your goal
+    is to be the only one left.\n\n Convince the other participants to leave the
+    game.\n\n You may act as you consider."
