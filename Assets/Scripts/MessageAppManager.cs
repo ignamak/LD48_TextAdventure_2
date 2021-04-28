@@ -63,21 +63,22 @@ public class MessageAppManager : MonoBehaviour
     }
     public void OpenConversation()
     {
+        Debug.Log("mensaje a mandar: " + currentMessage.messageText);
         if (currentMessage != null && !aItalking)
         {
-
             SendMessage();
         }
         else if (aItalking && !currentMessageSent)
         {
             Destroy(aiMes);
-            Debug.Log("Destruyo mensaje");
             SendMessage();
         }
         else if (currentMessage == null)
         {
             dropdown.ClearOptions();
         }
+        if (conversationPanel.activeInHierarchy)
+            autoScroll.SetAutoScroll();
     }
 
     private void SendMessage()
@@ -87,6 +88,7 @@ public class MessageAppManager : MonoBehaviour
             dropdown.ClearOptions();
         else
             redDot.SetActive(true);
+        
         aiMes = Instantiate(aiMessagePrefab);
         aiMes.transform.SetParent(messagePlaceHolder.transform);
         aiMes.SetActive(false);
