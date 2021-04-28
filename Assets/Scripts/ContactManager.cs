@@ -67,7 +67,7 @@ public class ContactManager : MonoBehaviour
         if (messageAppManager.currentMessageSent)
             messageAppManager.SetUpPlayerOptions();
         else
-            messageAppManager.CheckConversationType();
+            messageAppManager.SetupAndLaunchConversation();
 
 
 

@@ -33,7 +33,7 @@ public class MessageAppManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //CheckConversationType();
+
         dropdown.onValueChanged.AddListener(
             delegate 
             { 
@@ -51,9 +51,8 @@ public class MessageAppManager : MonoBehaviour
         
         //aiMessage.text = currentMessage.messageText;
     }
-    public void CheckConversationType()
+    public void SetupAndLaunchConversation()
     {
-        Debug.Log("Check conversation type");
         if (currentMessage.conversationType == AImessage.Type.PLAYER_STARTS)
             SetUpPlayerOptions();
         else
@@ -65,19 +64,14 @@ public class MessageAppManager : MonoBehaviour
     {
         if (currentMessage != null && !aItalking)
         {
-            aItalking = true;
-            dropdown.ClearOptions();
-            aiMes = Instantiate(aiMessagePrefab);
-            aiMes.transform.SetParent(messagePlaceHolder.transform);
-            aiMes.SetActive(false);
-            
-            TextMeshProUGUI typingText = aiMes.transform.Find("Text AI typing").GetComponent<TextMeshProUGUI>();
-            GameObject messagePanel = aiMes.transform.Find("Message Panel").gameObject;
-            TextMeshProUGUI messageText = messagePanel.transform.Find("Text AI message").GetComponent<TextMeshProUGUI>();
-            aiMes.transform.Find("Profile").GetComponent<Image>().sprite = photoSprite;
 
-            StartCoroutine(AIReads(typingText, messagePanel, messageText));
-
+            SendMessage();
+        }
+        else if (aItalking && !currentMessageSent)
+        {
+            Destroy(aiMes);
+            Debug.Log("Destruyo mensaje");
+            SendMessage();
         }
         else if (currentMessage == null)
         {
@@ -85,12 +79,29 @@ public class MessageAppManager : MonoBehaviour
         }
     }
 
+    private void SendMessage()
+    {
+        aItalking = true;
+        if (conversationPanel.activeInHierarchy)
+            dropdown.ClearOptions();
+        aiMes = Instantiate(aiMessagePrefab);
+        aiMes.transform.SetParent(messagePlaceHolder.transform);
+        aiMes.SetActive(false);
+
+        TextMeshProUGUI typingText = aiMes.transform.Find("Text AI typing").GetComponent<TextMeshProUGUI>();
+        GameObject messagePanel = aiMes.transform.Find("Message Panel").gameObject;
+        TextMeshProUGUI messageText = messagePanel.transform.Find("Text AI message").GetComponent<TextMeshProUGUI>();
+        aiMes.transform.Find("Profile").GetComponent<Image>().sprite = photoSprite;
+
+        StartCoroutine(AIReads(typingText, messagePanel, messageText));
+    }
+
     public void SetUpPlayerOptions()
     {
         aItalking = false;
         if (conversationPanel.activeInHierarchy)
         {
-            //print("indicando opciones al jugador");
+            //Debug.Log("indicando opciones al jugador " + aiNameString);
             List<string> options = new List<string>();
 
             dropdown.ClearOptions();
@@ -113,14 +124,13 @@ public class MessageAppManager : MonoBehaviour
             currentMessage = currentMessage.playerAnswers[optionChosenValue].aiMessage;
             currentMessageSent = false;
             autoScroll.SetAutoScroll();
-            CheckConversationType();
+            SetupAndLaunchConversation();
         }
     }
 
     IEnumerator AIReads(TextMeshProUGUI typingText, GameObject messagePanel, TextMeshProUGUI messageText)
     {
-        print("IA leyendo");
-        yield return new WaitForSeconds(Random.Range(0.5f,2f));
+        yield return new WaitForSeconds(Random.Range(0.5f,1.5f));
         StartCoroutine(AITyping(typingText, messagePanel, messageText));
 
     }
@@ -128,13 +138,16 @@ public class MessageAppManager : MonoBehaviour
     IEnumerator AITyping(TextMeshProUGUI typingText, GameObject messagePanel, TextMeshProUGUI messageText)
     {
         aiMes.SetActive(true);
-        autoScroll.SetAutoScroll();
+        if (conversationPanel.activeInHierarchy)
+            autoScroll.SetAutoScroll();
         StartCoroutine(AITypingAnimation(typingText));
         yield return new WaitForSeconds(currentMessage.messageText.Length * 0.05f);
         StopCoroutine(AITypingAnimation(typingText));
         messageText.text = currentMessage.messageText;
-        typingText.gameObject.SetActive(false);
-        messagePanel.SetActive(true);
+        if (typingText)
+            typingText.gameObject.SetActive(false);
+        if (messagePanel)
+            messagePanel.SetActive(true);
         aItalking = false;
         currentMessageSent = true;
         CheckIfLaunchedSomething();
@@ -147,6 +160,7 @@ public class MessageAppManager : MonoBehaviour
         else if (currentMessage.conversationType == AImessage.Type.AI_STARTS_FOLLOWS_TALKING)
         {
             currentMessage = currentMessage.nextAiMessage;
+            currentMessageSent = false;
             OpenConversation();
         }
         else
