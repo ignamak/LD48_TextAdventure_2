@@ -147,11 +147,11 @@ public class ContactManager : MonoBehaviour
         }
         else if (int.Parse(inputField.text) == loadAllContacts)
         {
-            for (int i = 0; i < allContacts.Length; i++)
-            {
-                allContacts[i].SetActive(true);
-            }
-            Debug.Log("all contacts are active");
+            //for (int i = 0; i < allContacts.Length; i++)
+            //{
+            //    allContacts[i].SetActive(true);
+            //}
+            //Debug.Log("all contacts are active");
         }
     }
 }

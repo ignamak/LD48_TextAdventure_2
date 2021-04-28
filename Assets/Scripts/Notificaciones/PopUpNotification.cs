@@ -22,40 +22,46 @@ public class PopUpNotification : MonoBehaviour
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
-        hidePosition = new Vector3(1568.360107421875f, 180.0f, 0);
-        showPosition = new Vector3(999.3600463867188f, 180.0f, 0);
+        hidePosition = new Vector3(320, 0, 0);
+        showPosition = new Vector3(-257, 0, 0);
         SendNotification(welcomeNotification);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //-----------------------------------------------------------DEBUG----------ESTO HABRA QUE QUITARLO
-        if (Input.GetKeyDown(KeyCode.H) && !movingNotification)
-        {
-            movingNotification = true;
-        }
-        else if (Input.GetKeyDown(KeyCode.H))
-        {
-            movingNotification = false;
-        }
-        //-----------------------------------------------------------------------
+        ////-----------------------------------------------------------DEBUG----------ESTO HABRA QUE QUITARLO
+        //if (Input.GetKeyDown(KeyCode.H) && !movingNotification)
+        //{
+        //    movingNotification = true;
+        //}
+        //else if (Input.GetKeyDown(KeyCode.H))
+        //{
+        //    movingNotification = false;
+        //}
+        ////-----------------------------------------------------------------------
 
 
-        switch (movingNotification)
-        {
-            case true:
-                rectTransform.position = Vector3.MoveTowards(rectTransform.position, showPosition , 2f);
-                break;
-            case false:
-                rectTransform.position = Vector3.MoveTowards(rectTransform.position, hidePosition, 3.5f);
-                break;
-        }
+        //switch (movingNotification)
+        //{
+        //    case true:
+        //        //Vector3(-257,0,0)
+        //        //rectTransform.position = Vector3.MoveTowards(rectTransform.position, showPosition , 200f * Time.deltaTime);              
+        //        //Debug.Log("position = "+ rectTransform.anchoredPosition);
+
+        //        break;
+        //    case false:
+        //        //rectTransform.position = Vector3.MoveTowards(rectTransform.position, hidePosition, 3.5f * Time.deltaTime);
+        //        break;
+        //}
     }
 
     public void MoveNotification(bool inOut) 
     {
-        movingNotification = inOut;      
+        gameObject.SetActive(inOut);
+
+      
+        //movingNotification = inOut;      
     }
 
     public void OnNotificationClick(ButtonState button) 
@@ -70,9 +76,11 @@ public class PopUpNotification : MonoBehaviour
 
     public void SendNotification(Notification_SO notification)
     {
-        movingNotification = true;
+        MoveNotification(true);
         notificationTitle.text = notification.getTitle();
         systemMessagesReader.CreateNewMessage(notification);
         AudioManager.instance.Play("notificationSound");
     }
+
+    
 }
