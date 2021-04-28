@@ -53,6 +53,7 @@ public class MessageAppManager : MonoBehaviour
     }
     public void CheckConversationType()
     {
+        Debug.Log("Check conversation type");
         if (currentMessage.conversationType == AImessage.Type.PLAYER_STARTS)
             SetUpPlayerOptions();
         else
@@ -185,7 +186,7 @@ public class MessageAppManager : MonoBehaviour
     public void GetDropdownValue(Dropdown sender)
     {
         optionChosenValue = sender.value;
-        Debug.Log("You have chosen: " + sender.value);
+        //Debug.Log("You have chosen: " + sender.value);
     }
 }
 

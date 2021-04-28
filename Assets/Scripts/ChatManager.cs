@@ -56,9 +56,11 @@ public class ChatManager : MonoBehaviour
         {
             AudioManager.instance.Play("firstSong");
         }
-        if (musicIndex == 2)
+        else if (musicIndex == 2)
         {
             AudioManager.instance.StartSecondSong();
         }
     }
+
+   
 }
