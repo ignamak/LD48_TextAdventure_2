@@ -11,12 +11,14 @@ public class PopUpNotification : MonoBehaviour
     public SystemMessagesReader systemMessagesReader;
     public Text notificationTitle;
 
+    public float notificationDelay = 3f;
     RectTransform rectTransform;
 
     Vector3 hidePosition;
     Vector3 showPosition;
 
     bool movingNotification;
+
 
     // Start is called before the first frame update
     void Start()
@@ -76,10 +78,15 @@ public class PopUpNotification : MonoBehaviour
 
     public void SendNotification(Notification_SO notification)
     {
+        StartCoroutine(NotificationDelay());
         MoveNotification(true);
         notificationTitle.text = notification.getTitle();
         systemMessagesReader.CreateNewMessage(notification);
         AudioManager.instance.Play("notificationSound");
+    }
+    IEnumerator NotificationDelay()
+    {
+        yield return new WaitForSeconds(notificationDelay);
     }
 
     
